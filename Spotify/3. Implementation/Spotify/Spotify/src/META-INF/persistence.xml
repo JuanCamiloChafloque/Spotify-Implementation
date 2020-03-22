@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="ProyectoFinalBDPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Modelo.Genero</class>
+    <class>Modelo.Usuariolikes</class>
+    <class>Modelo.Interprete</class>
+    <class>Modelo.Cancionxlista</class>
+    <class>Modelo.Cancionxinterprete</class>
+    <class>Modelo.Usuarioxreproduccion</class>
+    <class>Modelo.Empresar</class>
+    <class>Modelo.Usuarioc</class>
+    <class>Modelo.Cancion</class>
+    <class>Modelo.Paisc</class>
+    <class>Modelo.Suscripcion</class>
+    <class>Modelo.Album</class>
+    <class>Modelo.Listareproduccion</class>
+    <class>Modelo.Auditoria</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@orion.javeriana.edu.co:1521:PUJDB"/>
+      <property name="javax.persistence.jdbc.user" value="is316302"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="GUoArzrjco"/>
+      <property name="eclipselink.logging.level" value="FINE"/>
+      <property name="eclipselink.logging.parameters" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
